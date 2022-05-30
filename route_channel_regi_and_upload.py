@@ -29,11 +29,11 @@ def post_and_resp(data):
 
 # 注册下游物理通道(注册下游路由通道 route channel) ========
 hkt = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
-PTL_NAME = 'MFYDCMI02'
-PASSWORD = "7H525jy9"  # systemID的密码
+PTL_NAME = 'WTT'
+PASSWORD = "333"  # systemID的密码
 IP = "10.91.2.1" # SMPP_CLIENT:远端IP (10.91.1.1 & 10.91.2.1) 2775 ITT节点选1(奇数) GNC节点选2
 OA = 'CloudSMS' # 公共路由基本填写 CloudSMS，独立路由填写租户名称本身
-NOTE_NAME = "Texcell ADV-14339" # 下游原子通道别名（独立路由：供应商简写-UID； 公共路由如：Texcell OTP-14140)
+NOTE_NAME = "aaaa-13123" # 下游原子通道别名（独立路由：供应商简写-UID； 公共路由如：Texcell OTP-14140)
 data = {
     "uip_head": {
         "METHOD": "SMS_REGISTER_REQUEST",

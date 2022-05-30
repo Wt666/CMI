@@ -15,7 +15,7 @@ import time
 import json
 
 url_base = {
-    "my_test_company": "http://172.22.223.96:1819/uip",
+    "my_test_company": "https://172.22.223.96:1815/dave/io",
     
 }
 url = url_base["my_test_company"]
@@ -41,17 +41,17 @@ data = {
     },
     "uip_version": 2,
     "uip_body": {
-        "OPER_TYPE": "UPDATE",  # ADD/INQ/UPDATE/DEL等操作类型
-        "PTL_NAME": "BLNKCMI02",  # 物理通道名或租户具体通道名
+        "OPER_TYPE": "ADD",  # ADD/INQ/UPDATE/DEL等操作类型
+        "PTL_NAME": "WTT",  # 物理通道名或租户具体通道名
         "MODULE_NAME": "smpp",  # SMS协议模块名
-        "TENANT_NAME": "BLNKCMI02",  # 租户名
+        "TENANT_NAME": "WTT",  # 租户名
         "REGISTE_TYPE": "CLIENT",  # 注册类型
         "SEND_THRESHOLD": "20",  # 若无特别需求，默认为20
         "RECV_THRESHOLD": "20",  # 若无特别需求，默认为20
         "VERSION": "2021-04-23",
         # SMPP模块
-        "SYSTEM_ID": "BLNKCMI02",  # smpp的systemID
-        "PASSWORD": "H9RC64fQ",  # systemID的密码
+        "SYSTEM_ID": "WTT",  # smpp的systemID
+        "PASSWORD": "333",  # systemID的密码
         "SERVER_TYPE": "SMPP_CLIENT",  # 配置SMPP client端取值:SMPP_CLIENT
         "IP": "10.91.2.1",  # SMPP_CLIENT:远端IP (10.91.1.1 & 10.91.2.1) 2775
         "PORT": 2775,  # SMPP_CLIENT:远端IP
