@@ -8,7 +8,8 @@ import json
 # url 对接环境
 # 确认客户对接CloudSMS的环境（STG或PROD）
 url_base = {
-    "my_prod_company": "http://172.22.223.96:1819/uip",
+    "my_prod_company1": "http://172.22.223.96:1819/uip",
+    "my_prod_company": "https://cloudsms-new.jegotrip.com.cn:1815/dave/io"
 }
 url = url_base["my_prod_company"]
 
@@ -29,8 +30,8 @@ def post_and_resp(data):
 
 # 注册下游物理通道(注册下游路由通道 route channel) ========
 hkt = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
-PTL_NAME = 'WTT'
-PASSWORD = "333"  # systemID的密码
+PTL_NAME = 'CPB379CMI01'
+PASSWORD = "XhAmB9jW"  # systemID的密码
 IP = "10.91.2.1" # SMPP_CLIENT:远端IP (10.91.1.1 & 10.91.2.1) 2775 ITT节点选1(奇数) GNC节点选2
 OA = 'CloudSMS' # 公共路由基本填写 CloudSMS，独立路由填写租户名称本身
 NOTE_NAME = "aaaa-13123" # 下游原子通道别名（独立路由：供应商简写-UID； 公共路由如：Texcell OTP-14140)

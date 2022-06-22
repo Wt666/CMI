@@ -15,7 +15,7 @@ import time
 import json
 
 url_base = {
-    "my_test_company": "http://172.22.223.96:1819/uip",
+    "my_test_company": "https://cloudsms-new.jegotrip.com.cn:1815/dave/io",
 }
 url = url_base["my_test_company"]
 
@@ -48,10 +48,10 @@ data = {
         "SEND_THRESHOLD": "20",  # 若无特别需求，默认为20
         "RECV_THRESHOLD": "20",  # 若无特别需求，默认为20
         # SMPP模块
-        "SYSTEM_ID": "mitry.feishu.cn/sh",  # smpp的systemID
-        "PASSWORD": "XP9yqD8w",  # systemID的密码
+        "SYSTEM_ID": "CPB715CMI01",  # smpp的systemID
+        "PASSWORD": "GaRnq6T7",  # systemID的密码
         "SERVER_TYPE": "SMPP_SERVER",  # 配置SMPP client端取值:SMPP_CLIENT
-        "IP": "8.8.8.8",  # SMPP_CLIENT:远端IP
+        "IP": "10.91.2.1",  # SMPP_CLIENT:远端IP
         "PORT": 2775,  # SMPP_CLIENT:远端IP
         "MAX_LINK": 1,  # 最多允许链接数量，默认为：1,
         "ROUTE_ID": "Marketing_82",  # 业务通道映射
