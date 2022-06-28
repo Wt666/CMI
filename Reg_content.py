@@ -61,3 +61,8 @@ def main():
 
 if __name__ == "__main__":
     main()
+# import requests
+# url = 'http://localhost:8887/BYTE01'
+# rsp = requests.post(url, {"greeting":'AAA'}, verify=False)
+# print(rsp)
+# print(rsp.text)
