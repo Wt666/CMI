@@ -102,3 +102,9 @@ print(len(aliens))
 df=pd.DataFrame(aliens)
 print(df)
 # df.to_excel("test.xlsx")
+# abc=[]
+# for copy in range(280):
+#     copy1 = {"excel":""}
+#     abc.append(copy1)
+# df1 = pd.DataFrame(abc)
+# df1.to_excel("test1.xlsx")

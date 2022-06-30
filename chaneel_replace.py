@@ -7,6 +7,6 @@ def replace_space (channel_name, UID):
 
 
 
-replace_space("Far EasTone Telecommunications Co.,Ltd.",14167)
+replace_space("Shark Telecom Limited - A2P",16201)
 # for i in channelname:
 #     if i =
