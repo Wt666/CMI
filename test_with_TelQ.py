@@ -3,7 +3,7 @@ import time
 
 from telQ_basic import *
 from send_SMS_api import send_sms
-from analy_dispatchingLog import analy_dispatchingLog
+# from analy_dispatchingLog import analy_dispatchingLog
 routeTST_pRate_path = r'C:\Users\rexwang\Documents\routeTST_pRate.csv'
 
 def send_test_Message(tests_Paras, countryCode, route_id, auth_key, senderID=None, ttextEnd=False):
@@ -284,7 +284,7 @@ if __name__ == '__main__':
     country_list = [
         # 'South Korea',
         # 'Pakistan',
-        'Colombia',
+        'Vietnam',
         # 'Brazil',
         # 'Republika Slovenija',
         # 'Philippines',

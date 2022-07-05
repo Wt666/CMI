@@ -101,6 +101,13 @@ print(aliens)
 print(len(aliens))
 df=pd.DataFrame(aliens)
 print(df)
+
+for alien in aliens[:3]:
+    if alien['color'] == 'green':
+        alien['color'] = 'yellow'
+        alien['speed'] = 'medium'
+        alien['points'] = 10
+        print(alien)
 # df.to_excel("test.xlsx")
 # abc=[]
 # for copy in range(280):
@@ -108,3 +115,111 @@ print(df)
 #     abc.append(copy1)
 # df1 = pd.DataFrame(abc)
 # df1.to_excel("test1.xlsx")
+pizza = {
+    'crust': 'thick',
+    'toppings': ['mushrooms', 'extra cheese'],
+}
+print(f"You ordered a {pizza['crust']}-crust pizza " "with the following toppings:")
+for topping in pizza['toppings']:
+    print("\t" + topping)
+
+
+
+users = {
+    'aeinstein': {
+        'first': 'albert',
+        'last': 'einstein',
+        'location': 'princeton',
+},
+    'mcurie': {
+        'first': 'marie',
+        'last': 'curie',
+        'location': 'paris',
+},
+}
+for username, user_info in users.items():
+    print(f"\nUsername: {username}")
+    full_name = f"{user_info['first']} {user_info['last']}"
+    location = user_info['location']
+print(f"\tFull name: {full_name.title()}")
+print(f"\tLocation: {location.title()}")
+
+def make_pizza(size, *toppings):
+    """Summarize the pizza we are about to make."""
+    print(f"\nMaking a {size}-inch pizza with the following toppings:")
+    for topping in toppings:
+        print(f"- {topping}")
+make_pizza(16, 'pepperoni')
+make_pizza(12, 'mushrooms', 'green peppers', 'extra cheese')
+
+
+def build_profile(first, last, **user_info):
+    """Build a dictionary containing everything we know about a user."""
+    user_info['first_name'] = first
+    user_info['last_name'] = last
+    return user_info
+user_profile = build_profile('albert', 'einstein',location='princeton',field='physics')
+# df7=pd.DataFrame(user_profile)
+# df7.to_csv('wt.csv',index=True)
+print(user_profile)
+
+
+def make_car(manufacturer, model, **car_info):
+    car_info['manufacturer'] = manufacturer
+    car_info['model'] = model
+    return car_info
+
+
+car_profile = make_car('subaru', 'outback', color='blue', tow_package=True)
+print(car_profile)
+
+
+def add(a,b=3):
+    return a+b
+
+
+class Dog:
+    """A simple attempt to model a dog."""
+    def __init__(self, name, age):
+        """Initialize name and age attributes."""
+        self.name = name
+        self.age = age
+    def sit(self):
+        """Simulate a dog sitting in response to a command."""
+        print(f"{self.name} is now sitting.")
+    def roll_over(self):
+        """Simulate rolling over in response to a command."""
+        print(f"{self.name} rolled over!")
+
+my_dog = Dog('Willie', 6)
+your_dog = Dog('Lucy', 3)
+print(f"My dog's name is {my_dog.name}.")
+print(f"My dog is {my_dog.age} years old.")
+my_dog.sit()
+my_dog.roll_over()
+print(f"\nYour dog's name is {your_dog.name}.")
+print(f"Your dog is {your_dog.age} years old.")
+your_dog.sit()
+class Cat:
+
+    def __init__(self,name,age):
+        self.name=name
+        self.age=age
+    def fight(self):
+        print(f"{self.name} was fighting with {my_dog.name}")
+my_cat = Cat('Rex',1)
+my_cat.fight()
+
+class Car:
+    def __init__(self,make,model,year):
+        self.make=make
+        self.model=model
+        self.year=year
+
+    def get_descriptive_name(self):
+        """Return a neatly formatted descriptive name."""
+
+        long_name = f"{self.year} {self.make} {self.model}"
+        return long_name.title()
+my_car=Car('audi', 'a4', 2019)
+print(my_car.get_descriptive_name())

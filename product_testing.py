@@ -22,7 +22,7 @@ url = url_base["my_prod_company"]
 # 测试接收电话号码
 dires = {
     #
-    '852':[67657478],
+    # '852':[67657478],
     # "86": [18922199750], #,15219477228,15016316139，
     # "7": [9635554698],
     # "52": [5623466838,5623796531,4444603498,5518973424],
@@ -77,7 +77,7 @@ dires = {
     # "856":[2077929912],
     # "673":[8373707],
     # # "95":[9453310004],
-    # # "84":[84996062888],
+    "84":[906287255],
     # "886":[933154426], #real number 971535056, 922441271,978716969,
     # "855":[77877477],
     # "886":[978832989,926700596,937055171,906582982],
@@ -105,15 +105,15 @@ templs = {
     # "852655": "【太阳锅巴】双十一倒计时，买1件送5袋，买2件送15袋，送糯米锅巴试吃装！优享不容错过！错过再等一年，速来抢 m.tb.cn/h.fHLFLb0?tk=xLD62Qy2llb 退订回N",
     # "planet": "「まだ受け取ってないの学園」ご入学おめでとうございます！http://c*sm*a.com/RjY*L*X",
     # "CloudSMS": "Kode verifikasi Anda adalah 123456",
-    # "CloudSMS": "准备下班了",
+    "Google": "【GTKVN-VPN】Your verification code is 123456,valid for 1 minute.",
     # "234567": "Your pin code is 111111, please do not disclose it, if you have any question, please contact me, as the M800 cannot provide service, Vietnam is left empty, so I do not pick up your phone call,  best regard.",
 
     # "CloudSMS1": "您的登陆验证码为：111111",
-    "HOODS": "Congratulations King! We are pleased to inform you that you have been selected and eligible to purchase WTAPS 1234 SS COLLECTION. Please follow below instructions to secure your purchase eligibility. Each customer can purchase a maximum of 2 item per style only. T&C apply.Queue Ticket Number: 2Date: 11 JUNE 1111Time: 11:11AMShop Location: HOODS STORE HONG KONG (Shop C, 22 Ice House Street, Central)",
+    # "HOODS": "Congratulations King! We are pleased to inform you that you have been selected and eligible to purchase WTAPS 1234 SS COLLECTION. Please follow below instructions to secure your purchase eligibility. Each customer can purchase a maximum of 2 item per style only. T&C apply.Queue Ticket Number: 2Date: 11 JUNE 1111Time: 11:11AMShop Location: HOODS STORE HONG KONG (Shop C, 22 Ice House Street, Central)",
     # "dloudSMS": "您的一次性验证码为 111111 ,请勿告知他人,谢谢。[今日知识]知识就像海洋，只有意志坚强的人才能到达彼岸。这是伟大的马克思的名言名句，送予意志坚强的你，希望继续坚持，早日登上理想的彼岸，regrads.",
     # "456789": "您的一次性验证码为 111111 ,请勿告知他人,谢谢。[今日知识]知识就像海洋，只有意志坚强的人才能到达彼岸。这是伟大的马克思的名言名句，送予意志坚强的你，希望继续坚持，早日登上理想的彼岸，regrads.",
     #
-    # "AAA": "Your pin code is 111111, please do not disclose it.",
+    # "886960299366": "我是昨天給您打過電話的陳小姐 有些事沒跟您說清楚 麻煩您添加我ID：12345678",
     # "BBB": "Your pin code is 111111, please do not disclose it, if you have any question, please contact me, as the M800 cannot provide service, Vietnam is left empty, so I do not pick up your phone call,  best regard.",
     # "111": "Your pin code is 111111, please do not disclose it.",
     # "222": "Your pin code is 111111, please do not disclose it, if you have any question, please contact me, as the M800 cannot provide service, Vietnam is left empty, so I do not pick up your phone call,  best regard.",
@@ -197,13 +197,13 @@ def sms_send():
                     "TIME": local_time,
                     "AUTH_KEY": "cOUlfIimjcBgfxf5cNaiOVRjhQfJj1FIIj3FXGRJnwLVkkAe#jiT4n96f8#eCpKN3vvnauinWCqZK4WrpRGpAw==", # 租户的AUTH_KEY
 
-                    "ROUTE_ID": "BIGF_VerifyCode_3",  # 业务通道Route_id
+                    "ROUTE_ID": "WT_Notification_120",  # 业务通道Route_id
                     "PRIORITY": 0,
                     # "SIGNATURE_TYPE": 1,
                     "VERSION": "2020-07-12",
                     "SMS_CONTENT": bulk[2],
                     "ORIGINAL_ADDR": bulk[1],
-                    # "SIGNATURE": tem,
+                    # "SIGNATURE": "tem",
                     "MULTI_MSISDN_LIST": [{"DEST_MSISDN": str(bulk[3]),
                                            "COUNTRY_CODE": int(bulk[0])}],
                 }
