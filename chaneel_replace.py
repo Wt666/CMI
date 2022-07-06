@@ -7,6 +7,6 @@ def replace_space (channel_name, UID):
 
 
 
-replace_space("Multibyte Info Technology Limited",14165)
+replace_space("Transland Domestic Promo",14624)
 # for i in channelname:
 #     if i =

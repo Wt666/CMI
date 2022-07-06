@@ -284,7 +284,7 @@ if __name__ == '__main__':
     country_list = [
         # 'South Korea',
         # 'Pakistan',
-        'Vietnam',
+        'United States of America',
         # 'Brazil',
         # 'Republika Slovenija',
         # 'Philippines',
@@ -310,7 +310,7 @@ if __name__ == '__main__':
     # test_with_TelQ(country_list, tenant_name=tenant_name, auth_key=auth_key, n_need= 1, operator_need=None, route_id='RTST060_Notification_02', senderID=None)
 
     ## 路由质量测试，耗时至少15分钟。
-    dire_rst = test_with_TelQ_1(country_list, tenant_name=tenant_name, auth_key=auth_key, n_need=10, operator_need=None, route_id='WT_Notification_120', senderID=None)
+    dire_rst = test_with_TelQ_1(country_list, tenant_name=tenant_name, auth_key=auth_key, n_need=10, operator_need=None, route_id='CXY_Notification', senderID=None)
     update_routeTST_pRate(supplier_name='PT Cakra Alpha Spektrum - A2P Special  Route', supplier_id='11320', uid='14646', dire_rst=dire_rst)
 
     print('program done.')

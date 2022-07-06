@@ -16,8 +16,8 @@ print(df3)
 print(df4)
 a="miscellaneous"
 print(str.upper(a))
-df5=pd.read_excel("courses.xlsx")
-print(df5)
+# df5=pd.read_excel("courses.xlsx")
+# print(df5)
 a=np.array([2,5,1,6,8,1.5])
 print(np.sort(a))
 # S1=pd.Series(['a','b'])
@@ -63,7 +63,7 @@ user = 'Rex'
 if user not in banned_users:
     print(f"{user.title()}, you can post a response if you wish.")
 
-
+'''
 age = int(input("age="))
 if age > 18:
     print("You are a man")
@@ -71,7 +71,7 @@ elif age > 6:
     print("You are a teen")
 else:
     print("You are a child")
-
+'''
 
 wang = {"name":"rex","color":"red"}
 wang["height"] = 20
@@ -215,11 +215,97 @@ class Car:
         self.make=make
         self.model=model
         self.year=year
+        self.odometer_reading = 100
 
     def get_descriptive_name(self):
         """Return a neatly formatted descriptive name."""
 
         long_name = f"{self.year} {self.make} {self.model}"
         return long_name.title()
+
+    def read_odometer(self):
+        """Print a statement showing the car's mileage."""
+
+        print(f"This car has {self.odometer_reading} miles on it.")
+
+    def update_odometer(self, mileage):
+        """Set the odometer reading to the given value."""
+
+        # self.odometer_reading = mileage
+
+        if mileage >= self.odometer_reading:
+            self.odometer_reading = mileage
+        else:
+            print("\nYou can't roll back an odometer!")
+    def increment_odometer(self,miles):
+        self.odometer_reading += miles
+
 my_car=Car('audi', 'a4', 2019)
 print(my_car.get_descriptive_name())
+# my_car.update_odometer(23500)
+# my_car.read_odometer()
+# my_car.increment_odometer(100)
+# my_car.read_odometer()
+class ElectricCar(Car):
+    """Represent aspects of a car, specific to electric vehicles."""
+
+    def __init__(self, make, model, year):
+        """Initialize attributes of the parent class."""
+        super().__init__(make, model, year)
+        """
+        Initialize attributes of the parent class.
+        Then initialize attributes specific to an electric car.
+        """
+        self.battery_size=75
+
+    def describe_battery(self):
+        """Print a statement describing the battery size."""
+        print(f"This car has a {self.battery_size}-kWh battery.")
+
+    def battery_update(self,size):
+        self.battery_size += size
+
+    def fill_gas_tank(self):
+        """Electric cars don't have gas tanks."""
+
+        print("This car doesn't need a gas tank!")
+my_tesla = ElectricCar('tesla', 'model s', 2019)
+print(my_tesla.get_descriptive_name())
+my_tesla.describe_battery()
+my_tesla.battery_update(10)
+my_tesla.describe_battery()
+my_tesla.fill_gas_tank()
+
+battery_size1=int(input("battery_size="))
+class Battery:
+    # battery_size1 = input("battery_size=")
+    def __init__(self,battery_size=battery_size1):
+        self.battery_size=battery_size
+
+    def describe_battery(self):
+        """Print a statement describing the battery size."""
+
+        print(f"This car has a {self.battery_size}-kWh battery.")
+
+    def get_range(self):
+        """Print a statement about the range this battery provides."""
+
+        if self.battery_size == 75:
+            range = 260
+        elif self.battery_size == 100:
+            range = 315
+        print(f"This car can go about {range} miles on a full charge.")
+
+class Luxury_Car(Car):  #second Car: Parent Class
+    """Represent aspects of a car, specific to electric vehicles."""
+    def __init__(self, make, model, year):
+        """
+        Initialize attributes of the parent class.
+        Then initialize attributes specific to an electric car.
+        """
+        super().__init__(make, model, year)
+        self.battery = Battery()
+mybmw=Luxury_Car("BMW","X6",2022)
+print(mybmw.get_descriptive_name())
+mybmw.battery.describe_battery()
+mybmw.battery.get_range()
