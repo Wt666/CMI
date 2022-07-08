@@ -50,17 +50,17 @@ def sms_send():
             "SERIAL": 1,
             "TIME": local_time,
             "AUTH_KEY": "cOUlfIimjcBgfxf5cNaiOVRjhQfJj1FIIj3FXGRJnwLVkkAe#jiT4n96f8#eCpKN3vvnauinWCqZK4WrpRGpAw==",
-            "ROUTE_ID": "WT_Notification_120",
+            "ROUTE_ID": "IVEN_OTP_PPACK_TEST_VerifyCode",
             "MULTI_MSISDN_LIST":
                 [
                     {
-                        "DEST_MSISDN": "67657478",
+                        "DEST_MSISDN": "97734747",
                         "COUNTRY_CODE": 852
                     }
                 ],
             "SMS_CONTENT": "您的验证码是123345，请勿向他人透露。",
             "SIGNATURE": "CloudSMS",  # 短信签名无需填写【】，方框将通过SIGNATURE_TYPE添加
-            "SIGNATURE_TYPE": 2,  # 如使用SIGNATURE参数，请配合选择SIGNATURE_TYPE字段
+            "SIGNATURE_TYPE": 1,  # 如使用SIGNATURE参数，请配合选择SIGNATURE_TYPE字段
             "ORIGINAL_ADDR": "",  # 参数值若不填或为空，短信将使用默认SENDERID
             "VERSION": "2021-01-01",
             "REPEAT": 0,

@@ -7,6 +7,6 @@ def replace_space (channel_name, UID):
 
 
 
-replace_space("Transland Domestic Promo",14624)
+replace_space("PT Dian (SIM) ",16219)
 # for i in channelname:
 #     if i =

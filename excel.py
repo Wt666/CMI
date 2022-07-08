@@ -1,5 +1,6 @@
 import pandas as pd
 import numpy as np
+import random
 Path="a.csv"
 data1= {
     "name":["WT","WTT"],"age":[10,20]
@@ -276,11 +277,12 @@ my_tesla.battery_update(10)
 my_tesla.describe_battery()
 my_tesla.fill_gas_tank()
 
-battery_size1=int(input("battery_size="))
+# battery_size1=int(input("battery_size="))
 class Battery:
     # battery_size1 = input("battery_size=")
-    def __init__(self,battery_size=battery_size1):
-        self.battery_size=battery_size
+    # def __init__(self,battery_size=battery_size1):
+    def __init__(self, battery_size=75):
+        self.battery_size = battery_size
 
     def describe_battery(self):
         """Print a statement describing the battery size."""
@@ -309,3 +311,63 @@ mybmw=Luxury_Car("BMW","X6",2022)
 print(mybmw.get_descriptive_name())
 mybmw.battery.describe_battery()
 mybmw.battery.get_range()
+
+print(random.randint(1,6))
+Path = 'D:/配置文档/pi_digits.txt'
+
+with open(Path) as file_object:
+    # contents=file_object.read()
+    # for line in contents:
+    #     print(line)
+    lines=file_object.readlines()
+    pi_string = ''
+    for line in lines:
+        # print(line.rstrip())
+        # pi_string+=line.rstrip()
+        pi_string += line.strip()
+    print(pi_string)
+    print(len(pi_string))
+# print(contents.rstrip()) # 删除尾部字符space
+
+new_filename='pi_million_digits.txt'
+with open(new_filename) as new_file_object:
+    new_lines=new_file_object.readlines()
+    new_pi_string=''
+    for new_line in new_lines:
+        new_pi_string += new_line
+    # birthday = input("Enter your birthday, in the form mmddyy: ")
+    # if birthday in new_pi_string:
+    #     print("Your birthday appears in the first million digits of pi!")
+    # else:
+    #     print("Your birthday does not appear in the first million digits of pi.")
+    print(f"{new_pi_string[:3]}...")
+    print(len(new_pi_string))
+
+filename='programming.txt'
+with open(filename, 'w') as write_object:
+    write_object.write("I love programming.")
+    write_object.write("I love creating new games.")
+with open(filename,'a') as add:
+    add.write("\nREXERXERX"*10)
+print("aa"*7)
+try:
+    print(5/0)
+except ZeroDivisionError:
+    print("0 can't be divided")
+
+print("Give me two numbers, and I'll divide them.")
+print("Enter 'q' to quit.")
+while True:
+    first_number = input("\nFirst number: ")
+    if first_number == 'q':
+        break
+    second_number = input("Second number: ")
+    if second_number == 'q':
+        break
+    try:
+        answer = int(first_number) / int(second_number)
+        # print(answer)
+    except ZeroDivisionError:
+        print("Please re-input again correctly")
+    else:
+        print(answer)
