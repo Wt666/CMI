@@ -5,3 +5,9 @@ def get_formatted_name(first, last, middle=''):
     else:
         full_name = f"{first} {last}"
     return full_name.title()
+
+def add(a,b):
+    if a>b:
+        return a+b
+    else:
+        return b-a

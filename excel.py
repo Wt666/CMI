@@ -486,6 +486,7 @@ greet_user()
 
 import unittest
 from name_function import get_formatted_name
+from name_function import add
 class NamesTestCase(unittest.TestCase):
     """Tests for 'name_function.py'."""
     def test_first_last_name(self):
@@ -497,6 +498,15 @@ class NamesTestCase(unittest.TestCase):
         """Do names like 'Wolfgang Amadeus Mozart' work?"""
         formatted_name = get_formatted_name('wolfgang', 'mozart', 'amadeus')
         self.assertEqual(formatted_name, 'Wolfgang Amadeus Mozart')
+    def test_add(self):
+        add_result=add(4,9)
+        self.assertIn(add_result,[1,2,3,4,5])
+
+    def test_addd(self):
+        addd_result=add(5,1)
+        self.assertIn(addd_result,[6,7])
 
 if __name__ == '__main__':
     unittest.main()
+
+
