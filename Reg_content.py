@@ -1,6 +1,6 @@
 #! /usr/bin/env python3
 # coding:utf-8
-
+import unittest
 def main():
     reg_content = '''พนัน
 กู้
@@ -61,6 +61,8 @@ def main():
 
 if __name__ == "__main__":
     main()
+# if __name__ == '__main__':
+    unittest.main()
 # import requests
 # url = 'http://localhost:8887/BYTE01'
 # rsp = requests.post(url, {"greeting":'AAA'}, verify=False)

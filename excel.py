@@ -425,7 +425,8 @@ print(line_wt.lower().count('row'))
 
 # numbers=[1,2,3,4,5,6,7,8,9,11]
 Rex_filename = 'numbers.json'
-Rex_file='name.jason'
+Rex_file='name.json'
+RRex_file='nname.json'
 # with open(Rex_filename, 'w') as f:
 #     json.dump(numbers, f)
 with open(Rex_filename) as r:
@@ -435,3 +436,67 @@ print(new_numbers)
 with open(Rex_file) as o:
     new_name = json.load(o)
     print("Welcome back: "+new_name)
+
+# Load the username, if it has been stored previously.
+# Otherwise, prompt for the username and store it.
+def get_store_username():
+    """Get stored username if available."""
+    filename = RRex_file #参考428
+    try:
+        with open(RRex_file) as ff:
+            username = json.load(ff)
+    except FileNotFoundError:
+        return None
+    else:
+        return username
+def get_new_username():
+    """Prompt for a new username."""
+    username = input("What is your name? ")
+    # filename = 'nname.json'
+    with open(RRex_file, 'w') as f:
+        json.dump(username, f)
+        return username
+
+def greet_user():
+    """Greet the user by name."""
+    username=get_store_username()
+    if username:
+        print(f"2nd Welcome back, {username}!")
+    else:
+        # username = input("What is your name? ")
+        # my_name = RRex_file #参考428
+        # with open(my_name, 'w') as f:
+        #     json.dump(username, f)
+        get_new_username()
+        print(f"2nd We'll remember you when you come back, {username}!")
+    # my_name = 'name.json'
+    # try:
+    #     with open(my_name) as f:
+    #         username = json.load(f)
+    # except FileNotFoundError:
+    #     username = input("What is your name? ")
+    #     with open(my_name, 'w') as f:
+    #         json.dump(username, f)
+    #         print(f"We'll remember you when you come back, {username}!")
+    # else:
+    #     print(f"Welcome back, {username}!")
+# get_new_username()
+greet_user()
+
+
+import unittest
+from name_function import get_formatted_name
+class NamesTestCase(unittest.TestCase):
+    """Tests for 'name_function.py'."""
+    def test_first_last_name(self):
+        """Do names like 'Janis Joplin' work?"""
+        formatted_name = get_formatted_name('janis', 'joplin')
+        self.assertEqual(formatted_name, 'Janis Joplin')
+
+    def test_first_last_middle_name(self):
+        """Do names like 'Wolfgang Amadeus Mozart' work?"""
+        formatted_name = get_formatted_name('wolfgang', 'mozart', 'amadeus')
+        self.assertEqual(formatted_name, 'Wolfgang Amadeus Mozart')
+
+if __name__ == '__main__':
+    unittest.main()
