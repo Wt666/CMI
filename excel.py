@@ -1,6 +1,7 @@
 import pandas as pd
 import numpy as np
 import random
+import json
 Path="a.csv"
 data1= {
     "name":["WT","WTT"],"age":[10,20]
@@ -355,6 +356,8 @@ try:
 except ZeroDivisionError:
     print("0 can't be divided")
 
+
+'''
 print("Give me two numbers, and I'll divide them.")
 print("Enter 'q' to quit.")
 while True:
@@ -371,3 +374,64 @@ while True:
         print("Please re-input again correctly")
     else:
         print(answer)
+'''
+
+
+
+
+filename = 'alice.txt'
+try:
+    with open(filename, encoding='utf-8') as f:
+        contents = f.read()
+    # print(contents)
+except FileNotFoundError:
+    # f.write("Rex is God")
+    print(f"Sorry, the file {filename} does not exist.")
+else:
+    # Count the approximate number of words in the file.
+    words = contents.split()
+    num_words = len(words)
+    print(f"The file {filename} has about {num_words} words.")
+
+Rex="Rex is God"
+print(Rex.split())
+print(len(Rex.split()))
+
+def count_words(new_filename):
+    try:
+        with open(new_filename, encoding='utf-8') as f:
+            contents = f.read()
+        # print(contents)
+    except FileNotFoundError:
+        # f.write("Rex is God")
+        pass
+        # print(f"Sorry, the file {new_filename} does not exist.")
+    else:
+        # Count the approximate number of words in the file.
+        words = contents.split()
+        num_words = len(words)
+        print(f"The file {new_filename} has about {num_words} words.")
+
+count_words('alice.txt')
+
+
+filenames = ['alice.txt', 'siddhartha.txt', 'moby_dick.txt', 'little_women.txt']
+for filename in filenames:
+    count_words(filename)
+
+line_wt = "Row, row, row your boat"
+print(line_wt.count('row'))
+print(line_wt.lower().count('row'))
+
+# numbers=[1,2,3,4,5,6,7,8,9,11]
+Rex_filename = 'numbers.json'
+Rex_file='name.jason'
+# with open(Rex_filename, 'w') as f:
+#     json.dump(numbers, f)
+with open(Rex_filename) as r:
+    new_numbers = json.load(r)
+print(new_numbers)
+
+with open(Rex_file) as o:
+    new_name = json.load(o)
+    print("Welcome back: "+new_name)
