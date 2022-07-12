@@ -7,6 +7,6 @@ def replace_space (channel_name, UID):
 
 
 
-replace_space("PT Dian (SIM) ",16219)
+replace_space("Cequens LLP(A2P SUPPLIER)",14575)
 # for i in channelname:
 #     if i =
