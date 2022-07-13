@@ -283,7 +283,7 @@ if __name__ == '__main__':
     # country_list = ['Saudi Arabia',]
     country_list = [
         # 'South Korea',
-        'Iran',
+        'Pakistan',
         # 'United States of America',
         # 'Brazil',
         # 'Republika Slovenija',

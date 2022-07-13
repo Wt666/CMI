@@ -70,7 +70,7 @@ dires = {
     # "27":[603858894,743413029,794934424,719152287], #813096206
     # "234":[9065934231,9050904100,9074880958,8034718926],#9098560115,8146417645 Nigeria
     # "853":[63151030],
-    "81":[8047889989],
+    # "81":[8047889989],
 
     # "971":[557661788],
     # "60":[197777100,1132692256,196309646], #Malaysia
@@ -82,7 +82,7 @@ dires = {
     # "855":[77877477],
     # "886":[978832989,926700596,937055171,906582982],
     # "82":[1022682700],
-    # "92":[3239663734,3244509808,3307650035,3216837704,3006820041],#Pakistan
+    "92":[3239663734,3244509808,3307650035,3216837704,3006820041],#Pakistan
     # "34":[642580342], #Spain
     # "20":[1119353306], #Egypt
     # "98":[9915944986], #Iran
@@ -104,7 +104,7 @@ templs = {
     # 8种：字母OA、数字OA，长短信、短信，中文、英文
     # "852655": "【太阳锅巴】双十一倒计时，买1件送5袋，买2件送15袋，送糯米锅巴试吃装！优享不容错过！错过再等一年，速来抢 m.tb.cn/h.fHLFLb0?tk=xLD62Qy2llb 退订回N",
     # "planet": "「まだ受け取ってないの学園」ご入学おめでとうございます！http://c*sm*a.com/RjY*L*X",
-    "CloudSMS": "Your verificaiton code 123456",
+    "Tiktok": "Your verificaiton code 123456",
     # "Google": "【GTKVN-VPN】Your verification code is 123456,valid for 1 minute.",
     # "234567": "Your pin code is 111111, please do not disclose it, if you have any question, please contact me, as the M800 cannot provide service, Vietnam is left empty, so I do not pick up your phone call,  best regard.",
 
