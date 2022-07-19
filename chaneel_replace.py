@@ -7,6 +7,6 @@ def replace_space (channel_name, UID):
 
 
 
-replace_space("Cequens LLP(A2P SUPPLIER)",14575)
+replace_space("Alienics,  Inc. - A2P",14798)
 # for i in channelname:
 #     if i =
