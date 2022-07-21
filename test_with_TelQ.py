@@ -283,9 +283,9 @@ if __name__ == '__main__':
     # country_list = ['Saudi Arabia',]
     country_list = [
         # 'South Korea',
-        'Pakistan',
+        # 'Pakistan',
         # 'United States of America',
-        # 'Brazil',
+        'Brazil',
         # 'Republika Slovenija',
         # 'Philippines',
         # 'Hong Kong',
