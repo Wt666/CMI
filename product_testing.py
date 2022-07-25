@@ -22,7 +22,7 @@ url = url_base["my_prod_company"]
 # 测试接收电话号码
 dires = {
     #
-    '852':[54075862],
+    # '852':[54075862],
     # "86": [18922199750], #,15219477228,15016316139，
     # "7": [9635554698],
     # "52": [5623466838,5623796531,4444603498,5518973424],
@@ -61,7 +61,7 @@ dires = {
     # "44":[7909091569,7411064545,7957557539,7774056849],
     # "1":[6613412433,7082659239,6025598356,3098268966],
 
-    # "66":[968489252,618699662,965591696,933248237],
+    "66":[968489252,618699662,965591696,933248237],
     # "62":[8111561606], # 88806298608,85812748374, 85937060026, 83819656567,8111561606,88806298608,85812748374, 85937060026, 83819656567,83175993715,89612149632 # Indonesia
     # "375":[295996171, 333795585, 295159758, 292999863, 333047926, 292481221, 297132285, 333742882], #Belarus
     # "886":[922441271], # 979856571,973237077,926700596,933455005,906875894,989415871,982755783,905492964
@@ -104,7 +104,7 @@ templs = {
     # 8种：字母OA、数字OA，长短信、短信，中文、英文
     # "852655": "【太阳锅巴】双十一倒计时，买1件送5袋，买2件送15袋，送糯米锅巴试吃装！优享不容错过！错过再等一年，速来抢 m.tb.cn/h.fHLFLb0?tk=xLD62Qy2llb 退订回N",
     # "planet": "「まだ受け取ってないの学園」ご入学おめでとうございます！http://c*sm*a.com/RjY*L*X",
-    "CloudSMS": "Your verificaiton code is 123456.",
+    "CloudSMS": "Your verificaiton แจ ็คพอต is 123456.",
     # "Google": "【GTKVN-VPN】Your verification code is 123456,valid for 1 minute.",
     # "234567": "Your pin code is 111111, please do not disclose it, if you have any question, please contact me, as the M800 cannot provide service, Vietnam is left empty, so I do not pick up your phone call,  best regard.",
 
@@ -197,7 +197,7 @@ def sms_send():
                     "TIME": local_time,
                     "AUTH_KEY": "cOUlfIimjcBgfxf5cNaiOVRjhQfJj1FIIj3FXGRJnwLVkkAe#jiT4n96f8#eCpKN3vvnauinWCqZK4WrpRGpAw==", # 租户的AUTH_KEY
 
-                    "ROUTE_ID": "BIGF_VerifyCode_3",  # 业务通道Route_id
+                    "ROUTE_ID": "TIGERLEAP_Notification",  # 业务通道Route_id
                     "PRIORITY": 0,
                     # "SIGNATURE_TYPE": 1,
                     "VERSION": "2020-07-12",
