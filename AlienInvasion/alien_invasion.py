@@ -16,11 +16,11 @@ class AlienInvasion:
         pygame.init()
 
         self.settings = Settings()
-        self.screen = pygame.display.set_mode((0, 0), pygame.FULLSCREEN) # Running the Game in Fullscreen Mode
-        self.settings.screen_width = self.screen.get_rect().width # Running the Game in Fullscreen Mode
-        self.settings.screen_height = self.screen.get_rect().height # Running the Game in Fullscreen Mode
-        # self.screen = pygame.display.set_mode(
-        #     (self.settings.screen_width, self.settings.screen_height))
+        # self.screen = pygame.display.set_mode((0, 0), pygame.FULLSCREEN) # Running the Game in Fullscreen Mode
+        # self.settings.screen_width = self.screen.get_rect().width # Running the Game in Fullscreen Mode
+        # self.settings.screen_height = self.screen.get_rect().height # Running the Game in Fullscreen Mode
+        self.screen = pygame.display.set_mode(
+            (self.settings.screen_width, self.settings.screen_height))
 
         # self.screen = pygame.display.set_mode((1200, 800))
         pygame.display.set_caption("Alien Invasion")
@@ -66,7 +66,7 @@ class AlienInvasion:
         # Determine the number of rows of aliens that fit on the screen.
         ship_height = self.ship.rect.height # Determine the number of rows of aliens that fit on the screen.
         available_space_y = (self.settings.screen_height - (3 * alien_height) - ship_height)
-        number_rows = available_space_y // (2 * alien_height)
+        number_rows = available_space_y // (3 * alien_height)
         # Create the first row of aliens.
         # Create the full fleet of aliens.
         for row_number in range(number_rows):
@@ -112,6 +112,10 @@ class AlienInvasion:
             self._create_fleet()
             self.settings.increse_speed()
 
+            # Increase level
+            self.stats.level += 1
+            self.sb.prep_level()
+
 
     def _check_events(self):
         """Respond to keypresses and mouse events."""
@@ -137,6 +141,8 @@ class AlienInvasion:
             self.stats.reset_stats()
             self.stats.game_active = True
             self.sb.prep_score()
+            self.sb.prep_level()
+            self.sb.prep_ships()
 
             # Get rid of any remaining aliens and bullets.
             self.aliens.empty()
@@ -236,7 +242,9 @@ class AlienInvasion:
         """Respond to the ship being hit by an alien"""
         # Decrement ships_left
         if self.stats.ships_left > 0:
+            # Decrement ships_left, and update scoreboard
             self.stats.ships_left -= 1
+            self.sb.prep_ships()
 
             # Get rid of any remaining aliens and bullets
             self.aliens.empty()
