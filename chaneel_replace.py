@@ -7,6 +7,6 @@ def replace_space (channel_name, UID):
 
 
 
-replace_space("AlkaIP Telecom LLC - A2P Premium",16248)
+replace_space("CMPAK_A2P",14947)
 # for i in channelname:
 #     if i =

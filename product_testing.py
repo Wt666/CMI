@@ -22,8 +22,8 @@ url = url_base["my_prod_company"]
 # 测试接收电话号码
 dires = {
     #
-    # '852':[54075862],
-    # "86": [18922199750], #,15219477228,15016316139，
+    # '852':[67657478],
+    # "86": [18420665911], #,15219477228,15016316139，
     # "7": [9635554698],
     # "52": [5623466838,5623796531,4444603498,5518973424],
     # "55": [11991352696], #27999751162,11935858606,21920004267,11950166776
@@ -37,7 +37,7 @@ dires = {
     # "1":[6473763671,6138662927,5145709955,2498785077],
     # "32":[466212822,493483563,489994250,478953902],
     # "43":[6765667401,6704020430,6503204852,69918182670],
-    # "61":[402529824,469828928,474423388,470650180], #
+    # "61":[423111945], #402529824,469828928,474423388,470650180
     # "49":[15792313908,1704038289,15217574232,15792313908], #Germany
     # "358":[4573457019,442922088,400663692,466598225],
     # "372":[56255267,56649527,51984723,5503661],
@@ -61,8 +61,8 @@ dires = {
     # "44":[7909091569,7411064545,7957557539,7774056849],
     # "1":[6613412433,7082659239,6025598356,3098268966],
 
-    "66":[968489252,618699662,965591696,933248237],
-    # "62":[8111561606], # 88806298608,85812748374, 85937060026, 83819656567,8111561606,88806298608,85812748374, 85937060026, 83819656567,83175993715,89612149632 # Indonesia
+    # "66":[968489252,618699662,965591696,933248237],
+    "62":[8111561606], # 88806298608,85812748374, 85937060026, 83819656567,8111561606,88806298608,85812748374, 85937060026, 83819656567,83175993715,89612149632 # Indonesia
     # "375":[295996171, 333795585, 295159758, 292999863, 333047926, 292481221, 297132285, 333742882], #Belarus
     # "886":[922441271], # 979856571,973237077,926700596,933455005,906875894,989415871,982755783,905492964
     # "57":[3185212721,3207561356,3005199458,3503585204,3167613628],#
@@ -104,18 +104,18 @@ templs = {
     # 8种：字母OA、数字OA，长短信、短信，中文、英文
     # "852655": "【太阳锅巴】双十一倒计时，买1件送5袋，买2件送15袋，送糯米锅巴试吃装！优享不容错过！错过再等一年，速来抢 m.tb.cn/h.fHLFLb0?tk=xLD62Qy2llb 退订回N",
     # "planet": "「まだ受け取ってないの学園」ご入学おめでとうございます！http://c*sm*a.com/RjY*L*X",
-    "CloudSMS": "Your verificaiton แจ ็คพอต is 123456.",
+    # "106575864009": "铳 剁 玿 颂 剁 玿 tbtybet23.vip:1234",
     # "Google": "【GTKVN-VPN】Your verification code is 123456,valid for 1 minute.",
     # "234567": "Your pin code is 111111, please do not disclose it, if you have any question, please contact me, as the M800 cannot provide service, Vietnam is left empty, so I do not pick up your phone call,  best regard.",
 
-    # "CloudSMS1": "您的登陆验证码为：111111",
-    # "HOODS": "Congratulations King! We are pleased to inform you that you have been selected and eligible to purchase WTAPS 1234 SS COLLECTION. Please follow below instructions to secure your purchase eligibility. Each customer can purchase a maximum of 2 item per style only. T&C apply.Queue Ticket Number: 2Date: 11 JUNE 1111Time: 11:11AMShop Location: HOODS STORE HONG KONG (Shop C, 22 Ice House Street, Central)",
+    # "61485836472": "Your pin code is 111111, please do not disclose it.",
+    # "DanaRupiah": "Congratulations King! We are pleased to inform you that you have been selected and eligible to purchase WTAPS 1234 SS COLLECTION. Please follow below instructions to secure your purchase eligibility. Each customer can purchase a maximum of 2 item per style only. T&C apply.Queue Ticket Number: 2Date: 11 JUNE 1111Time: 11:11AMShop Location: HOODS STORE HONG KONG (Shop C, 22 Ice House Street, Central)",
     # "dloudSMS": "您的一次性验证码为 111111 ,请勿告知他人,谢谢。[今日知识]知识就像海洋，只有意志坚强的人才能到达彼岸。这是伟大的马克思的名言名句，送予意志坚强的你，希望继续坚持，早日登上理想的彼岸，regrads.",
     # "456789": "您的一次性验证码为 111111 ,请勿告知他人,谢谢。[今日知识]知识就像海洋，只有意志坚强的人才能到达彼岸。这是伟大的马克思的名言名句，送予意志坚强的你，希望继续坚持，早日登上理想的彼岸，regrads.",
     #
     # "886960299366": "我是昨天給您打過電話的陳小姐 有些事沒跟您說清楚 麻煩您添加我ID：12345678",
-    # "BBB": "Your pin code is 111111, please do not disclose it, if you have any question, please contact me, as the M800 cannot provide service, Vietnam is left empty, so I do not pick up your phone call,  best regard.",
-    # "111": "Your pin code is 111111, please do not disclose it.",
+    # "DanaRupiah": "Your pin code is 111111, please do not disclose it, if you have any question, please contact me, as the M800 cannot provide service, Vietnam is left empty, so I do not pick up your phone call,  best regard.",
+    "DanaRupiah": "[DanaRupiah]Your pin code is 111111, please do not disclose it.",
     # "222": "Your pin code is 111111, please do not disclose it, if you have any question, please contact me, as the M800 cannot provide service, Vietnam is left empty, so I do not pick up your phone call,  best regard.",
     # "CCC": "您的注册验证码为：111111",
     # "333": "您的验证码是111111。请注意保护您的验证码信息，不要分享给其他人。",
@@ -197,7 +197,7 @@ def sms_send():
                     "TIME": local_time,
                     "AUTH_KEY": "cOUlfIimjcBgfxf5cNaiOVRjhQfJj1FIIj3FXGRJnwLVkkAe#jiT4n96f8#eCpKN3vvnauinWCqZK4WrpRGpAw==", # 租户的AUTH_KEY
 
-                    "ROUTE_ID": "TIGERLEAP_Notification",  # 业务通道Route_id
+                    "ROUTE_ID": "WT_Notification_120",  # 业务通道Route_id
                     "PRIORITY": 0,
                     # "SIGNATURE_TYPE": 1,
                     "VERSION": "2020-07-12",
