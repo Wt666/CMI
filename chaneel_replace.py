@@ -7,6 +7,6 @@ def replace_space (channel_name, UID):
 
 
 
-replace_space("CMPAK_A2P",14947)
+replace_space("Tele0 LLC - A2P",16320)
 # for i in channelname:
 #     if i =

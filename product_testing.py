@@ -115,14 +115,14 @@ templs = {
     #
     # "886960299366": "我是昨天給您打過電話的陳小姐 有些事沒跟您說清楚 麻煩您添加我ID：12345678",
     # "DanaRupiah": "Your pin code is 111111, please do not disclose it, if you have any question, please contact me, as the M800 cannot provide service, Vietnam is left empty, so I do not pick up your phone call,  best regard.",
-    "DanaRupiah": "[DanaRupiah]Your pin code is 111111, please do not disclose it.",
+    # "CloudSMS": "Your pin code is 111111, please do not disclose it.",
     # "222": "Your pin code is 111111, please do not disclose it, if you have any question, please contact me, as the M800 cannot provide service, Vietnam is left empty, so I do not pick up your phone call,  best regard.",
     # "CCC": "您的注册验证码为：111111",
     # "333": "您的验证码是111111。请注意保护您的验证码信息，不要分享给其他人。",
     # "DDD": "您的一次性验证码为 111111 ,请勿告知他人,谢谢。[今日知识]知识就像海洋，只有意志坚强的人才能到达彼岸。这是伟大的马克思的名言名句，送予意志坚强的你，希望继续坚持，早日登上理想的彼岸，regrads.",
     # "444": "您的一次性验证码为 111111 ,请勿告知他人,谢谢。[今日知识]知识就像海洋，只有意志坚强的人才能到达彼岸。这是伟大的马克思的名言名句，送予意志坚强的你，希望继续坚持，早日登上理想的彼岸，regrads.",
 
-    # "886960235366": "TCDC_Notification",
+    "CloudSMS": "Please use the link: http://sms.skechers.com.hk:****/api/member/activate/r*yu*k",
     # "123456": "Your verification code is 111111",
     # "Google": "Your pin code is 111111, please do not disclose it, if you have any question, please contact me, as the M800 cannot provide service, Vietnam is left empty, so I do not pick up your phone call,  best regard.",
     # "234567": "Your pin code is 111111, please do not disclose it, if you have any question, please contact me, as the M800 cannot provide service, Vietnam is left empty, so I do not pick up your phone call,  best regard.",
@@ -199,11 +199,11 @@ def sms_send():
 
                     "ROUTE_ID": "WT_Notification_120",  # 业务通道Route_id
                     "PRIORITY": 0,
-                    # "SIGNATURE_TYPE": 1,
+                    "SIGNATURE_TYPE": 3,
                     "VERSION": "2020-07-12",
                     "SMS_CONTENT": bulk[2],
                     "ORIGINAL_ADDR": bulk[1],
-                    # "SIGNATURE": "tem",
+                    "SIGNATURE": "CloudSMS",
                     "MULTI_MSISDN_LIST": [{"DEST_MSISDN": str(bulk[3]),
                                            "COUNTRY_CODE": int(bulk[0])}],
                 }
