@@ -7,6 +7,6 @@ def replace_space (channel_name, UID):
 
 
 
-replace_space("Tele0 LLC - A2P",16320)
+replace_space("RSCom Limited - A2P",14749)
 # for i in channelname:
 #     if i =

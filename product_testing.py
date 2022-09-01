@@ -14,15 +14,15 @@ from tornado.httpserver import HTTPServer
 
 url_base = {
     # "my_test_company": "https://172.22.223.192:1815/dave/io",  # STG的公司内网访问地址
-    "my_prod_company": "https://172.22.223.98:1815/dave/io",  # prod的公司内网访问地址  备环境
-    # "my_prod_company": "https://cloudsms-new.jegotrip.com.cn:1815/dave/io",  # prod的公司内网访问地址
+    # "my_prod_company": "https://172.22.223.98:1815/dave/io",  # prod的公司内网访问地址  备环境
+    "my_prod_company": "https://cloudsms-new.jegotrip.com.cn:1815/dave/io",  # prod的公司内网访问地址
 }
 url = url_base["my_prod_company"]
 
 # 测试接收电话号码
 dires = {
     #
-    '852':[67657478],
+    '852':[65141852],
     # "86": [18420665911], #,15219477228,15016316139，
     # "7": [9635554698],
     # "52": [5623466838,5623796531,4444603498,5518973424],
@@ -34,7 +34,7 @@ dires = {
     # "998": [913110746],
 
     # "357":[96265253,97830288,99007406,96467669],
-    # "1":[6473763671,6138662927,5145709955,2498785077],
+    # "1":[8886888265,6138662927,5145709955,2498785077,8777210970],
     # "32":[466212822,493483563,489994250,478953902],
     # "43":[6765667401,6704020430,6503204852,69918182670],
     # "61":[423111945], #402529824,469828928,474423388,470650180
@@ -114,7 +114,7 @@ templs = {
     # "456789": "您的一次性验证码为 111111 ,请勿告知他人,谢谢。[今日知识]知识就像海洋，只有意志坚强的人才能到达彼岸。这是伟大的马克思的名言名句，送予意志坚强的你，希望继续坚持，早日登上理想的彼岸，regrads.",
     #
     # "886960299366": "我是昨天給您打過電話的陳小姐 有些事沒跟您說清楚 麻煩您添加我ID：12345678",
-    "DanaRupiah": "Your pin code is 111111, please do not disclose it, if you have any question, please contact me, as the M800 cannot provide service, Vietnam is left empty, so I do not pick up your phone call,  best regard.",
+    # "DanaRupiah": "Your pin code is 111111, please do not disclose it, if you have any question, please contact me, as the M800 cannot provide service, Vietnam is left empty, so I do not pick up your phone call,  best regard.",
     # "CloudSMS": "Your pin code is 111111, please do not disclose it.",
     # "222": "Your pin code is 111111, please do not disclose it, if you have any question, please contact me, as the M800 cannot provide service, Vietnam is left empty, so I do not pick up your phone call,  best regard.",
     # "CCC": "您的注册验证码为：111111",
@@ -122,8 +122,8 @@ templs = {
     # "DDD": "您的一次性验证码为 111111 ,请勿告知他人,谢谢。[今日知识]知识就像海洋，只有意志坚强的人才能到达彼岸。这是伟大的马克思的名言名句，送予意志坚强的你，希望继续坚持，早日登上理想的彼岸，regrads.",
     # "444": "您的一次性验证码为 111111 ,请勿告知他人,谢谢。[今日知识]知识就像海洋，只有意志坚强的人才能到达彼岸。这是伟大的马克思的名言名句，送予意志坚强的你，希望继续坚持，早日登上理想的彼岸，regrads.",
 
-    # "CloudSMS": "Please use the link: http://sms.skechers.com.hk:****/api/member/activate/r*yu*k",
-    # "123456": "Your verification code is 111111",
+    "CloudSMS": "Your verification code is 122325, please don't share it to others!",
+    # "HSBC": "账户余额：1000000000000000",
     # "Google": "Your pin code is 111111, please do not disclose it, if you have any question, please contact me, as the M800 cannot provide service, Vietnam is left empty, so I do not pick up your phone call,  best regard.",
     # "234567": "Your pin code is 111111, please do not disclose it, if you have any question, please contact me, as the M800 cannot provide service, Vietnam is left empty, so I do not pick up your phone call,  best regard.",
     #
@@ -197,13 +197,13 @@ def sms_send():
                     "TIME": local_time,
                     "AUTH_KEY": "cOUlfIimjcBgfxf5cNaiOVRjhQfJj1FIIj3FXGRJnwLVkkAe#jiT4n96f8#eCpKN3vvnauinWCqZK4WrpRGpAw==", # 租户的AUTH_KEY
 
-                    "ROUTE_ID": "WT_Notification_120",  # 业务通道Route_id
+                    "ROUTE_ID": "BIGF_VerifyCode_3",  # 业务通道Route_id
                     "PRIORITY": 0,
-                    "SIGNATURE_TYPE": 3,
+                    # "SIGNATURE_TYPE": 3,
                     "VERSION": "2020-07-12",
                     "SMS_CONTENT": bulk[2],
                     "ORIGINAL_ADDR": bulk[1],
-                    "SIGNATURE": "CloudSMS",
+                    # "SIGNATURE": "CloudSMS",
                     "MULTI_MSISDN_LIST": [{"DEST_MSISDN": str(bulk[3]),
                                            "COUNTRY_CODE": int(bulk[0])}],
                 }
