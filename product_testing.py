@@ -22,7 +22,7 @@ url = url_base["my_prod_company"]
 # 测试接收电话号码
 dires = {
     #
-    '852':[65141852],
+    # '852':[65141852],
     # "86": [18420665911], #,15219477228,15016316139，
     # "7": [9635554698],
     # "52": [5623466838,5623796531,4444603498,5518973424],
@@ -64,7 +64,7 @@ dires = {
     # "66":[968489252,618699662,965591696,933248237],
     # "62":[8111561606], # 88806298608,85812748374, 85937060026, 83819656567,8111561606,88806298608,85812748374, 85937060026, 83819656567,83175993715,89612149632 # Indonesia
     # "375":[295996171, 333795585, 295159758, 292999863, 333047926, 292481221, 297132285, 333742882], #Belarus
-    # "886":[922441271], # 979856571,973237077,926700596,933455005,906875894,989415871,982755783,905492964
+    "886":[922441271], # 979856571,973237077,926700596,933455005,906875894,989415871,982755783,905492964
     # "57":[3185212721,3207561356,3005199458,3503585204,3167613628],#
     # "57":[3041219757,3126022835,3193517137,3012048799,3057600182,3024656140],#
     # "27":[603858894,743413029,794934424,719152287], #813096206
@@ -122,7 +122,7 @@ templs = {
     # "DDD": "您的一次性验证码为 111111 ,请勿告知他人,谢谢。[今日知识]知识就像海洋，只有意志坚强的人才能到达彼岸。这是伟大的马克思的名言名句，送予意志坚强的你，希望继续坚持，早日登上理想的彼岸，regrads.",
     # "444": "您的一次性验证码为 111111 ,请勿告知他人,谢谢。[今日知识]知识就像海洋，只有意志坚强的人才能到达彼岸。这是伟大的马克思的名言名句，送予意志坚强的你，希望继续坚持，早日登上理想的彼岸，regrads.",
 
-    "CloudSMS": "Your verification code is 122325, please don't share it to others!",
+    "CloudSMS": "Your verification code is 122325, please don't share it to othersfuturism2-0.com",
     # "HSBC": "账户余额：1000000000000000",
     # "Google": "Your pin code is 111111, please do not disclose it, if you have any question, please contact me, as the M800 cannot provide service, Vietnam is left empty, so I do not pick up your phone call,  best regard.",
     # "234567": "Your pin code is 111111, please do not disclose it, if you have any question, please contact me, as the M800 cannot provide service, Vietnam is left empty, so I do not pick up your phone call,  best regard.",
@@ -197,7 +197,7 @@ def sms_send():
                     "TIME": local_time,
                     "AUTH_KEY": "cOUlfIimjcBgfxf5cNaiOVRjhQfJj1FIIj3FXGRJnwLVkkAe#jiT4n96f8#eCpKN3vvnauinWCqZK4WrpRGpAw==", # 租户的AUTH_KEY
 
-                    "ROUTE_ID": "BIGF_VerifyCode_3",  # 业务通道Route_id
+                    "ROUTE_ID": "WT_Notification_120",  # 业务通道Route_id
                     "PRIORITY": 0,
                     # "SIGNATURE_TYPE": 3,
                     "VERSION": "2020-07-12",
