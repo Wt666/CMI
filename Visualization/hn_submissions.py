@@ -19,7 +19,7 @@ for submission_id in submission_ids[:30]:
     submission_dict = {
         'title': response_dict['title'],
         'hn_link': f"http://news.ycombinator.com/item?id={submission_id}",
-        'comments': response_dict['descendants'],
+        'comments': response_dict['type'],
     }
     submission_dicts.append(submission_dict)
 

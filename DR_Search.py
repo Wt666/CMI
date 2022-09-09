@@ -9,11 +9,11 @@ data ={
         "METHOD": "DR_QUERY",
         "SERIAL": 1,
         "TIME": local_time,
-        "CHANNEL": "CMIPB", # Please use your tenant name, which is assigned by CloudSMS
-        "AUTH_KEY": "cOUlfIimjcBgfxf5cNaiOVRjhQfJj1FIIj3FXGRJnwLVkkAe#jiT4n96f8#eCpKN3vvnauinWCqZK4WrpRGpAw=="
+        "CHANNEL": "DBFB", # Please use your tenant name, which is assigned by CloudSMS
+        "AUTH_KEY": "cOUlfIimjcBgfxf5cNaiOesZw0t#vtkzcTEslGyVppQFaNPKinJ+aWU51PHgaxvi6uEDAShrx3mGiVrreL#3wA=="
     },
     "uip_body": {
-        "SMS_UID":["5E7858F619664X28AHFA163E9DC506"]
+        "SMS_UID":["5E804A57B5238X2A5HFA163E9DC506"]
     },
     "uip_version": 2
 }
