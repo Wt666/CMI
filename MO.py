@@ -45,26 +45,22 @@ def sms_send():
         #         local_time = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
         local_time = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
         data = {
-            "METHOD": "SMS_SEND_REQUEST",
-            "TYPE": "REQUEST",
-            "SERIAL": 1,
-            "TIME": local_time,
-            "AUTH_KEY": "cOUlfIimjcBgfxf5cNaiOVRjhQfJj1FIIj3FXGRJnwLVkkAe#jiT4n96f8#eCpKN3vvnauinWCqZK4WrpRGpAw==",
-            "ROUTE_ID": "WT_Notification_120",
-            "MULTI_MSISDN_LIST":
-                [
-                    {
-                        "DEST_MSISDN": "66661140738",
-                        # "COUNTRY_CODE": 852
-                    }
-                ],
-            "SMS_CONTENT": "วัน น ี ้คุณดว ง ดีได้รับทอ งค ำฟร ีๆ ขอบพระคุณที่ท่านร่วมกิจกรรมเมืองไทยสไมล์คลับ โปรดให้คะแนนความพึงพอใจเพื่อการพัฒนาที่ดียิ่งขึ้น คลิก aws3.link/fZxiLH",
-            # "SIGNATURE": "CloudSMS",  # 短信签名无需填写【】，方框将通过SIGNATURE_TYPE添加
-            # "SIGNATURE_TYPE": 1,  # 如使用SIGNATURE参数，请配合选择SIGNATURE_TYPE字段
-            "ORIGINAL_ADDR": "CloudSMS",  # 参数值若不填或为空，短信将使用默认SENDERID
-            "VERSION": "2021-01-01",
-            "REPEAT": 0,
-            "CUSTOMER_BODY": {}
+             "uip_head": {
+                  "METHOD": "SMS_UP_REQUEST",
+                  "SERIAL": 1,
+                  "TIME": local_time,
+                  "AUTH_KEY": "cOUlfIimjcBgfxf5cNaiOVRjhQfJj1FIIj3FXGRJnwLVkkAe#jiT4n96f8#eCpKN3vvnauinWCqZK4WrpRGpAw==",
+                  "CHANNEL": "WT_Notification_120"
+             },
+             "uip_body": {
+                  "TO": "67657478",
+                  "FROM": "16666666666",
+                  "CONTENT": "test1",
+                  "DEST_CODE": "852",
+                  "SMS_UUID": "SMS345678",
+                  "BODY_VERSION": "2022-11-10"
+             },
+             "uip_version": 2
         }
         post_and_resp(data)
         print("Finish")

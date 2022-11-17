@@ -8,12 +8,13 @@ data ={
     "uip_head": {
         "METHOD": "DR_QUERY",
         "SERIAL": 1,
-        "TIME": local_time,
-        "CHANNEL": "DBFB", # Please use your tenant name, which is assigned by CloudSMS
-        "AUTH_KEY": "cOUlfIimjcBgfxf5cNaiOesZw0t#vtkzcTEslGyVppQFaNPKinJ+aWU51PHgaxvi6uEDAShrx3mGiVrreL#3wA=="
+        # "TIME": local_time,
+        "TIME":'2022-09-20 17:09:00',
+        "CHANNEL": "NEON", # Please use your tenant name, which is assigned by CloudSMS
+        "AUTH_KEY": "cOUlfIimjcBgfxf5cNaiOecIhvKoplBl0vUzjVMv5ORKjORa1W3gIA#Sc3zPsXbPa0RmKLeLQdQgPC7451Gfsg=="
     },
     "uip_body": {
-        "SMS_UID":["5E804A57B5238X2A5HFA163E9DC506"]
+        "SMS_UID":["5EB46E61D63B2X35EHFA163E9DC506"]
     },
     "uip_version": 2
 }

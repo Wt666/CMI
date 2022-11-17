@@ -22,7 +22,7 @@ url = url_base["my_prod_company"]
 # 测试接收电话号码
 dires = {
     #
-    '852':[68235923],
+    '852':[67657478],
     # "86": [18420665911], #,15219477228,15016316139，
     # "7": [9635554698],
     # "52": [5623466838,5623796531,4444603498,5518973424],
@@ -30,14 +30,14 @@ dires = {
 
     # "33": [667399690,664650870,602260813,767129105],
     # "91": [8019974840,8511744610,7621894524,9818140670, 9013589565, 9631875982, 9490643107],
-    # "63": [639278900926],
+    # "63": [9992261189],
     # "998": [913110746],
 
     # "357":[96265253,97830288,99007406,96467669],
     # "1":[8886888265,6138662927,5145709955,2498785077,8777210970],
     # "32":[466212822,493483563,489994250,478953902],
     # "43":[6765667401,6704020430,6503204852,69918182670],
-    # "61":[423111945], #402529824,469828928,474423388,470650180
+    # "61":[470650180], #402529824,469828928,474423388,470650180
     # "49":[15792313908,1704038289,15217574232,15792313908], #Germany
     # "358":[4573457019,442922088,400663692,466598225],
     # "372":[56255267,56649527,51984723,5503661],
@@ -59,7 +59,7 @@ dires = {
     # "82":[1049949079,1065354948,1022408110,1030539790], #Korea
     # # "34":[633154857,600460768,679450282,653150255],
     # "44":[7909091569,7411064545,7957557539,7774056849],
-    # "1":[6613412433,7082659239,6025598356,3098268966],
+    # "1":[7082659239,6613412433,7082659239,2294901188],
 
     # "66":[968489252,618699662,965591696,933248237],
     # "62":[8111561606], # 88806298608,85812748374, 85937060026, 83819656567,8111561606,88806298608,85812748374, 85937060026, 83819656567,83175993715,89612149632 # Indonesia
@@ -105,25 +105,24 @@ templs = {
     # "852655": "【太阳锅巴】双十一倒计时，买1件送5袋，买2件送15袋，送糯米锅巴试吃装！优享不容错过！错过再等一年，速来抢 m.tb.cn/h.fHLFLb0?tk=xLD62Qy2llb 退订回N",
     # "planet": "「まだ受け取ってないの学園」ご入学おめでとうございます！http://c*sm*a.com/RjY*L*X",
     # "106575864009": "铳 剁 玿 颂 剁 玿 tbtybet23.vip:1234",
-    # "Google": "【GTKVN-VPN】Your verification code is 123456,valid for 1 minute.",
+    "Google": "双11抢先Run，福利双响炮，送钱又派券：A.购物满$159立返$30；B.充$280得$360，充$140得$170。福利截止10月31日，够宠你，All利给！福利你冲不冲，冲充冲充冲！",
     # "234567": "Your pin code is 111111, please do not disclose it, if you have any question, please contact me, as the M800 cannot provide service, Vietnam is left empty, so I do not pick up your phone call,  best regard.",
 
-    # "61485836472": "Your pin code is 111111, please do not disclose it.",
+    # "eBest": "双**抢先Run，福利双响炮，送钱又派券！第一炮：购物满$***减$**，收货再返$**；第二炮：充$***得$***，充$***得$***！福利截止**月**日，够宠你，All利给！你充还是不冲？充充冲冲冲！！！",
     # "DanaRupiah": "Congratulations King! We are pleased to inform you that you have been selected and eligible to purchase WTAPS 1234 SS COLLECTION. Please follow below instructions to secure your purchase eligibility. Each customer can purchase a maximum of 2 item per style only. T&C apply.Queue Ticket Number: 2Date: 11 JUNE 1111Time: 11:11AMShop Location: HOODS STORE HONG KONG (Shop C, 22 Ice House Street, Central)",
     # "dloudSMS": "您的一次性验证码为 111111 ,请勿告知他人,谢谢。[今日知识]知识就像海洋，只有意志坚强的人才能到达彼岸。这是伟大的马克思的名言名句，送予意志坚强的你，希望继续坚持，早日登上理想的彼岸，regrads.",
     # "456789": "您的一次性验证码为 111111 ,请勿告知他人,谢谢。[今日知识]知识就像海洋，只有意志坚强的人才能到达彼岸。这是伟大的马克思的名言名句，送予意志坚强的你，希望继续坚持，早日登上理想的彼岸，regrads.",
     #
-    # "886960299366": "我是昨天給您打過電話的陳小姐 有些事沒跟您說清楚 麻煩您添加我ID：12345678",
+    # "8686": "sample send for the day",
     # "DanaRupiah": "Your pin code is 111111, please do not disclose it, if you have any question, please contact me, as the M800 cannot provide service, Vietnam is left empty, so I do not pick up your phone call,  best regard.",
-    # "CloudSMS": "Your pin code is 111111, please do not disclose it.",
+    # "BON": "Thank you for participating in one of our online channels. We have chosen you as one to receive our voucher. Get a chance to win a Toyota Vios. To claim and learn more, please visit us via www.youtube.com.",
     # "222": "Your pin code is 111111, please do not disclose it, if you have any question, please contact me, as the M800 cannot provide service, Vietnam is left empty, so I do not pick up your phone call,  best regard.",
-    # "CCC": "您的注册验证码为：111111",
+    # "CloudSMS": "Your pin code is 111111, please do not disclose it.",
     # "333": "您的验证码是111111。请注意保护您的验证码信息，不要分享给其他人。",
     # "DDD": "您的一次性验证码为 111111 ,请勿告知他人,谢谢。[今日知识]知识就像海洋，只有意志坚强的人才能到达彼岸。这是伟大的马克思的名言名句，送予意志坚强的你，希望继续坚持，早日登上理想的彼岸，regrads.",
     # "444": "您的一次性验证码为 111111 ,请勿告知他人,谢谢。[今日知识]知识就像海洋，只有意志坚强的人才能到达彼岸。这是伟大的马克思的名言名句，送予意志坚强的你，希望继续坚持，早日登上理想的彼岸，regrads.",
-
-    "RAZE": "RAZE SMS OA TESTINGOA: RAZE測試短訊 *",
-    # "HSBC": "账户余额：1000000000000000",
+    # "+18777210970": "You may be eligible for compensation if you have used any of these products:www.consumerprotection.team StoptoEnd",
+    # "61428723462": "SMS ping (CMI-rsingh) **/**/** **:**",
     # "Google": "Your pin code is 111111, please do not disclose it, if you have any question, please contact me, as the M800 cannot provide service, Vietnam is left empty, so I do not pick up your phone call,  best regard.",
     # "234567": "Your pin code is 111111, please do not disclose it, if you have any question, please contact me, as the M800 cannot provide service, Vietnam is left empty, so I do not pick up your phone call,  best regard.",
     #
@@ -173,12 +172,12 @@ def post_and_resp(data):
     rsp_new = json.loads(rsp)
     code = rsp_new["RESULT_CODE"]
     # 发送成功的记录（保存为两个文件）
-    if code != 1:
-        print("发送异常:")
-        print(f'sms_oa:{sms_oa}')
-        print(f'cc:{dire}, phone:{phone}')
-        save_file(file_name="STG_Fail.txt",
-                  data=data, rsp=rsp)
+    # if code != 1:
+    #     print("发送异常:")
+    #     print(f'sms_oa:{sms_oa}')
+    #     print(f'cc:{dire}, phone:{phone}')
+    #     save_file(file_name="STG_Fail.txt",
+    #               data=data, rsp=rsp)
 
 def sms_send():
     try:
@@ -197,15 +196,20 @@ def sms_send():
                     "TIME": local_time,
                     "AUTH_KEY": "cOUlfIimjcBgfxf5cNaiOVRjhQfJj1FIIj3FXGRJnwLVkkAe#jiT4n96f8#eCpKN3vvnauinWCqZK4WrpRGpAw==", # 租户的AUTH_KEY
 
-                    "ROUTE_ID": "BIGF_VerifyCode_3",  # 业务通道Route_id
+                    "ROUTE_ID": "WT_Notification_120",  # 业务通道Route_id
                     "PRIORITY": 0,
                     # "SIGNATURE_TYPE": 3,
                     "VERSION": "2020-07-12",
+                    # "SMS_CONTENT": templs,
                     "SMS_CONTENT": bulk[2],
                     "ORIGINAL_ADDR": bulk[1],
+                    # "SMS_CONTENT": "Hi",
+                    # "ORIGINAL_ADDR": "bulk[1]",
                     # "SIGNATURE": "CloudSMS",
                     "MULTI_MSISDN_LIST": [{"DEST_MSISDN": str(bulk[3]),
                                            "COUNTRY_CODE": int(bulk[0])}],
+                    # "MULTI_MSISDN_LIST": [{
+                    #                        "DEST_MSISDN":85267657478}],
                 }
                 post_and_resp(data)
                 had_sent += 1
