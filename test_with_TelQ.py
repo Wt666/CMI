@@ -287,12 +287,12 @@ if __name__ == '__main__':
         # 'United States of America',
         # 'Russian Federation',
         # 'Republika Slovenija',
-        # 'Kazakhstan',
-        # 'Hong Kong',
-        'Canada',
-        # 'Taiwan',
-        # 'Thailand',
-        # 'Australia',
+        # 'Italy',
+        # 'United Kingdom',
+        # 'United Arab Emirates',
+        # 'Saudi Arabia',
+        # 'San Marino',
+        'Australia',
     ]
 
     # tenant_name = 'CMIPB_Tong'

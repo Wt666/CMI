@@ -1,0 +1,35 @@
+Date: 11/1/2023
+Time: 16:49
+Phone Number: +85267657478
+Message: Howdy! This message will be sent instantly!
+--------------------
+Date: 11/1/2023
+Time: 16:51
+Phone Number: +85267657478
+Message: Howdy! This message will be sent instantly!
+--------------------
+Date: 11/1/2023
+Time: 16:52
+Phone Number: +85267657478
+Message: Howdy! This message will be sent instantly!
+--------------------
+Date: 11/1/2023
+Time: 16:58
+Phone Number: +85269044836
+Message: Test message from a Python script!
+--------------------
+Date: 11/1/2023
+Time: 16:59
+Phone Number: +85269044836
+Message: Test message from a Python script!
+--------------------
+Date: 11/1/2023
+Time: 17:0
+Phone Number: +85269044836
+Message: Test message from a Python script!
+--------------------
+Date: 11/1/2023
+Time: 17:2
+Phone Number: +85269044836
+Message: Test message from a Python script!
+--------------------

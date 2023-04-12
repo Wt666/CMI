@@ -1,8 +1,3 @@
-#! /usr/bin/env python3
-# coding:utf-8
-import unittest
-def main():
-    reg_content = '''
 พนัน
 กู้
 สินเชื่อ
@@ -54,18 +49,3 @@ def main():
 ly/5IEb
 https://t.ly/5IEb
 t.ly
-'''
-    sms_content = "การถอนหมายเลข ID ******** อาจล่าช้ากว่าปกติโปรดมั่นใจว่าเราจะพยายามอย่างเต็มที่เพื่อดำเนินธุรกรรมการถอนเงินของสมาชิกโดยเร็วที่สุด"
-    for reg in reg_content.split("\n"):
-        if reg in sms_content:
-            print(reg)
-
-if __name__ == "__main__":
-    main()
-# if __name__ == '__main__':
-    unittest.main()
-# import requests
-# url = 'http://localhost:8887/BYTE01'
-# rsp = requests.post(url, {"greeting":'AAA'}, verify=False)
-# print(rsp)
-# print(rsp.text)
