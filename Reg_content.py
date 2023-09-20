@@ -3,69 +3,347 @@
 import unittest
 def main():
     reg_content = '''
-พนัน
-กู้
-สินเชื่อ
-เงินทุน
-อนุมัติไว
-รายได้
-สมัครเงิน
-เงินด่วน
-อนุมัติเร็ว
-เครดิต
-ค้ำประกัน
-หนี้
-รับเงิน
-รางวัล
-ลุ้น
-ดวง
-โชค
-รวย
-หวย
-แจ็คพอต
-แจคพอต
-สล็อต
-สลอต
-คาสิโน
-พ  นัน
-กู้
-สิ นเ ชื่อ
-เงิ นทุ น
-อนุมัติไ ว
-รายได ้
-สมัค รเงิน
-เงินด ่วน
-อนุมัต ิเร ็ว
-เครด ิต
-ค ้ำ ปร ะกัน
-หน ี้
-รับเง ิน
-รางว ัล
-ล ุ้น
-ด วง
-โช ค
-รว ย
-หว ย
-แจ ็คพอต
-แจค พอต
-สล ็อต
-สล อต
-คาส ิโน
-ly/5IEb
-https://t.ly/5IEb
+.top
+逾期未繳
+繳清
+繳納
+逾期作廢
+.ink
+.xyz
+.club
+bit.ly
+cutt.ly
+is.gd
+shorturl.at
+urlzs.com
+tinyurl.com
+duckdns.org
+sc.piee.pw
+pse.is
+asq.kr
+vip.kr
+zupoe.com
+bxtrt.com
+nvdret.com
+nvdre.com
+bxwrt.com
+muwev.com
+vwtuw.com
+aervc.com
+bghwr.com
+nbghp.com
+zadhe.com
+rdngf.com
+yxcmr.com
+vzxqq.com
+bdxqe.com
+bxsea.com
+cdrqy.com
+sgshort.link
+updt.sbs
+tracking.tw.com
+twtracking.com
+twtracking.org
+tracking-tw.com
+shortw.link
+hk-parcel.cc
+shortcn.net
+shrtln.net
+dhlpost.hk
+tracking.tw-pos.com
+drgz.me
+shrtcn.com
+tnwtstur.com 
+aoetopu.com
+lugdclus.com
+aohrxy.tech
+s.id
+qevbc.com
+ezryi.com
+ipqse.com
+ywuvm.com
+pzsgp.com
+ukwwx.com
+wwywg.com
+eaebc.com
+happypocket.com
+asygdo.com
+mirwze.com
+obyrns.com
+wwncv.com
+mxciy.com
+uyvrx.com
+chunghwapay.net
+payment.net
+送貨
+振興三倍劵
+禮品
+貨運
+递送
+递送
+查收
+failed to be delivered
+無法交付
+未付關稅
+退給發送方
+欠缺
+派送
+失败
+關稅未付
+單號
+清關
+飆股
+漲停
+證券
+帶領購買
+操盤
+當沖
+波段
+報牌
+明牌體驗
+抄底
+大盤
+績優股
+投資
+強勢個股
+內線標的
+標的
+彪股
+飙股
+潛力股
+短線
+薦股
+大盤回暖
+優股
+標股
+明牌
+飚股
+飆月殳
+名牌
+大漲
+妖股
+猋風月殳
+報片卑
+黑馬標
+烏俄混戰
+㯹的
+打電話
+私訊免費
+指磦
+古市
+私募
+私穆
+私穆
+ㄅㄧㄠ ㄍㄨˇ
+必亮
+漲價趨股
+持股診斷
+現買現噴
+資金活化
+伽我
+本公司合作夥伴
+資深分析師
+佈局
+財富列車
+航運
+鋼鐵
+生物科技
+獲利
+分析師
+出炉
+投資顧問
+賺更多
+證卷人員
+内线
+解套
+三雄
+台股的救星
+投顧助理
+亮燈
+出爐
+勝率高
+技術精
+盤中解讀
+元大業務
+傳授
+行情低迷
+內線
+機構調研
+元大理財師
+攜手散戶
+比較急
+添加我
+我的籟
+有賺有賠
+選股秘籍
+籌碼K線
+下一檔
+指標鈍化
+財經茶水間
+搶短操作
+急事找　
+投資專員　
+投資專員
+line.me
+加賴
++賴
+加line
++line
++助理line
++助理賴
+加助理line
+加助理賴
+賴ID
+sapao.top
+我的賴
+點擊賴
+點擊赖
+加我賴
+加LINE
+賴我
+加我領取
+赖ID
+進群
+L1ne我
+1ne我
+cutt.ly
+bit.ly
+唻
+Liиe
+迦
+rebrand.ly
 t.ly
+ibit.ly
+urlzst.com
+Ovu.cn
+t2m.io
+zeep.ly
+籟　
++lpe　
+籁　
+鏈接
+扣費
+凍結
+查驗
+信息
+防疫
+紓困
+疫情
+防疫
+紓困
+疫情
+津貼
+津貼
+檢疫
+檢疫
+防補
+補.貼
+提領
+確診
+提領
+確診
+請領
+請領
+確診者
+確診者
+補償金
+補償金
+大補貼
+大 補 貼
+申領
+申領
+下發
+下發
+提.領
+pucnct.tech
+tnwtstur.com
+tnwtstur.com
+aohrxy.tech
+lugdclus.com
+tasdst.tech
+taeziq.com
+taezip.com
+cohesf.tw
+cohesf.pw
+aoetopu.com
+nsxsun.pw
+kftysw.com
+lasebe.com
+qomtac.tech
+nsxsun.tw
+s.id
+dcnmys.com
+kcuwds.pw
+buntsi.pw
+fcsfzw.pw
+hzruua.com
+moth.tw 
+cutt.ly
+maepes.pw
+obyrns.com
+asygdo.com
+skbz.pw
+amccyo.pw
+mirwze.com
+xbstus.com
+pzcztm.com
+koiynu.pw
+dzyng.com
+ezausi.com
+obyrns.com
+wsflb.net
+mxciy.com
+uyvrx.com
+tinyurl.com
+rszvck.com
+ob4.cn
+rekvtu.com
+ksfses.com
+weishenx.com
+tcfner.com
+qiazzc.com
+dpurl.or
+buzhutw.top
+bit.ly
+wysite.net
+trkwis.com
+afroonline.net
+gov.com
+gov.me
+gov.top
+gov.xyz
+gov.tv
+gov.pw
+gov.net
+futurism2-0.com
+dvs.net
+jin..com
+welfaretw.com
+tov.com
+bov.com
+cpyus.com
+qov.com
+Package
+package
+.live
+L I N E
+囖
+➕我
+L I N E
+L i n e
+l i n e
++我
+我的Line
+我的LINE
+我的line
+加我
+smsb.co
 '''
-    sms_content = "การถอนหมายเลข ID ******** อาจล่าช้ากว่าปกติโปรดมั่นใจว่าเราจะพยายามอย่างเต็มที่เพื่อดำเนินธุรกรรมการถอนเงินของสมาชิกโดยเร็วที่สุด"
+    sms_content = "【漲樂全球通】驗證碼：******，如需協助，請點擊頁面的“線上客服”。若非本人登錄，請忽略本條信息。"
     for reg in reg_content.split("\n"):
         if reg in sms_content:
             print(reg)
-
 if __name__ == "__main__":
     main()
 # if __name__ == '__main__':
     unittest.main()
-# import requests
-# url = 'http://localhost:8887/BYTE01'
-# rsp = requests.post(url, {"greeting":'AAA'}, verify=False)
-# print(rsp)
-# print(rsp.text)

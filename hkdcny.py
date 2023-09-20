@@ -7,7 +7,7 @@ R = float(input("请输入收入(CNY)："))
 # 获取汇率API返回的当日汇率
 response = requests.get("https://api.exchangerate-api.com/v4/latest/CNY")
 exchange_rate = response.json()["rates"]["HKD"]
-
+# print(exchange_rate)
 # 计算交易利润P
 P = ((R * exchange_rate) - C)/ exchange_rate
 P_HKD = P * exchange_rate

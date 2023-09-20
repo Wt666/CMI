@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>笔记记录</title>
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.9/xlsx.full.min.js"></script>
+	<script>
+		var notes = []; // 记录笔记的数组
+
+		// 获取当前时间戳
+		function getTimeStamp() {
+			var now = new Date();
+			var year = now.getFullYear();
+			var month = now.getMonth() + 1;
+			var day = now.getDate();
+			var hour = now.getHours();
+			var minute = now.getMinutes();
+			var second = now.getSeconds();
+			return year + "-" + month + "-" + day + " " + hour + ":" + minute + ":" + second;
+		}
+
+		// 添加笔记
+		function addNote() {
+			var content = $("#noteContent").val();
+			var provider = $("#noteProvider").val();
+			var timestamp = getTimeStamp();
+			var images = $("#noteImages").prop("files");
+
+			// 将图片转换为base64编码
+			var imageBase64 = [];
+			for (var i = 0; i < images.length; i++) {
+				var reader = new FileReader();
+				reader.onload = function(e) {
+					imageBase64.push(e.target.result);
+				};
+				reader.readAsDataURL(images[i]);
+			}
+
+			// 将笔记添加到数组中
+			notes.push({
+				content: content,
+				provider: provider,
+				timestamp: timestamp,
+				images: imageBase64
+			});
+
+			// 更新笔记列表
+			updateNoteList();
+		}
+
+		// 更新笔记列表
+		function updateNoteList() {
+			var html = "";
+			for (var i = 0; i < notes.length; i++) {
+				html += "<div class='note'>";
+				html += "<div class='noteContent'>" + notes[i].content + "</div>";
+				html += "<div class='noteProvider'>" + notes[i].provider + "</div>";
+				html += "<div class='noteTimestamp'>" + notes[i].timestamp + "</div>";
+				html += "<div class='noteImages'>";
+				for (var j = 0; j < notes[i].images.length; j++) {
+					html += "<img src='" + notes[i].images[j] + "'>";
+				}
+				html += "</div>";
+				html += "<div class='noteActions'>";
+				html += "<button onclick='editNote(" + i + ")'>编辑</button>";
+				html += "<button onclick='deleteNote(" + i + ")'>删除</button>";
+				html += "</div>";
+				html += "</div>";
+			}
+			$("#noteList").html(html);
+		}
+
+		// 编辑笔记
+		function editNote(index) {
+			var note = notes[index];
+			$("#noteContent").val(note.content);
+			$("#noteProvider").val(note.provider);
+			$("#noteImagesPreview").html("");
+			for (var i = 0; i < note.images.length; i++) {
+				$("#noteImagesPreview").append("<img src='" + note.images[i] + "'>");
+			}
+			notes.splice(index, 1);
+			updateNoteList();
+		}
+
+		// 删除笔记
+		function deleteNote(index) {
+			notes.splice(index, 1);
+			updateNoteList();
+		}
+
+		// 导出笔记
+		function exportNotes() {
+			var filename = prompt("请输入会议名称", "");
+			if (filename != null) {
+				var data = [["内容", "提供者", "时间戳", "图片"]];
+				for (var i = 0; i < notes.length; i++) {
+					var note = notes[i];
+					var images = "";
+					for (var j = 0; j < note.images.length; j++) {
+						images += note.images[j] + "\n";
+					}
+					data.push([note.content, note.provider, note.timestamp, images]);
+				}
+				var wb = xlsx.utils.book_new();
+				var ws = xlsx.utils.aoa_to_sheet(data);
+				xlsx.utils.book_append_sheet(wb, ws, "笔记记录");
+				xlsx.writeFile(wb, filename + " " + getTimeStamp().split(" ")[0] + ".xlsx");
+			}
+		}
+	</script>
+	<style>
+		.note {
+			border: 1px solid #ccc;
+			padding: 10px;
+			margin-bottom: 10px;
+		}
+		.noteImages img {
+			max-width: 100%;
+			max-height: 200px;
+			margin-right: 10px;
+			margin-bottom: 10px;
+		}
+	</style>
+</head>
+<body>
+	<h1>笔记记录</h1>
+	<div>
+		<label>内容：</label>
+		<textarea id="noteContent"></textarea>
+	</div>
+	<div>
+		<label>提供者：</label>
+		<input type="text" id="noteProvider">
+	</div>
+	<div>
+		<label>时间戳：</label>
+		<span id="noteTimestamp"></span>
+	</div>
+	<div>
+		<label>图片：</label>
+		<input type="file" id="noteImages" multiple>
+		<div id="noteImagesPreview"></div>
+	</div>
+	<div>
+		<button onclick="addNote()">添加</button>
+		<button onclick="exportNotes()">导出</button>
+	</div>
+	<div id="noteList"></div>
+</body>
+</html>
