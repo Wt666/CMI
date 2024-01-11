@@ -53,11 +53,10 @@ def main():
 คาส ิโน
 ly/5IEb
 https://t.ly/5IEb
-t.ly
 https://o.roopcn.com
 แอดไลน์ :0967427422 ได้10000-100000
 '''
-    sms_content = "*****JPS CLUB * YEAR ANNIVERSARY SURPRISES! *-** Oct'**, JPS get *X Points and JPS+ get *X Points (* time/brand) and a chance to win a Lucky Draw total reward*M Points! *Mins Spend *,*** baht. *T&Cs apply. More info https://bit.ly/jps*yr"
+    sms_content = "END OF SEASON SALE **% OFF ON SELECTED ITEMS * JAN - ** JAN ** at OUR STORES OR CLICK https://bit.ly/*aB*nyg"
     for reg in reg_content.split("\n"):
         if reg in sms_content:
             print(reg)
@@ -65,3 +64,4 @@ if __name__ == "__main__":
     main()
 # if __name__ == '__main__':
     unittest.main()
+
